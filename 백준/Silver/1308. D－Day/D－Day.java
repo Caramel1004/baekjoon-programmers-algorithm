@@ -68,7 +68,7 @@ public class Main {
 
             } else {// 같은 년도 아닐 떄
 
-                // 오늘 날짜 부터 이번년도 12월 까지의 일 수 모두 더하는 알고리즘
+                // 오늘 날짜 부터 이번년도 12월 까지의 일 수 모두 더하는 로직
                 for (int month = todayMonth; month <= 12; month++) {
                     if ((todayYear % 4 == 0 && todayYear % 100 != 0) || todayYear % 400 == 0) {
                         if (month == todayMonth) {
@@ -85,7 +85,7 @@ public class Main {
                     }
                 }
 
-                // 1월부터 디데이 날짜 달 까지의 일 수 모두 더하는 알고리즘
+                // 1월부터 디데이 날짜 달 까지의 일 수 모두 더하는 로직
                 for (int month = 1; month <= dDayMonth; month++) {
                     if ((dDayYear % 4 == 0 && dDayYear % 100 != 0) || dDayYear % 400 == 0) {
                         if (month == dDayMonth) {// 디데이 날짜의 달인 경우
